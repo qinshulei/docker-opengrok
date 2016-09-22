@@ -1,4 +1,5 @@
 FROM tomcat:8.0
+RUN apt-get update -y && apt-get install --no-install-recommends -y -q git
 RUN mkdir /src
 RUN mkdir /data
 RUN ln -s /data /var/opengrok
